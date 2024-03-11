@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const links = [
@@ -15,16 +16,26 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
-      <div className="hidden md:flex gap-4">
+      {/* LINKS */}
+      <div className="hidden md:flex gap-4 w-1/3">
         {links.map(link => (
           <Link href={link.url} key={link.title}>{link.title}</Link>
         ))}
       </div>
       {/* LOGO */} 
-      <div className="md:hidden">
+      <div className="md:hidden lg:flex w-1/3 justify-center">
         <Link href="/" className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center">
           <span className="text-white mr-1">Jay</span>
           <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center">.dev</span>
+        </Link>
+      </div>
+      {/* SOCIALS */}
+      <div className="hidden md:flex gap-4 w-1/3">
+        <Link href="https://github.com/Jay-Jay-19">
+          <Image src="/github.png" alt="github logo" width={24} height={24} />
+        </Link>
+        <Link href="https://www.linkedin.com/in/gilbert-jay-m-598a0b2b1/">
+          <Image src="/linkedin.png" alt="linkedin logo" width={24} height={24} />
         </Link>
       </div>
       {/* RESPONSIVE MENU */} 
