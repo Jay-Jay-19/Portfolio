@@ -67,17 +67,17 @@ const PortfolioPage = () => {
                 key={item.id}
               >
                 <div className="flex flex-col gap-8 text-white">
-                  <h1>
+                  <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
                     {item.title}
                   </h1>
-                  <div className="relative">
+                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
                     <Image src={item.img} alt="" fill />
                   </div>
-                  <p>
+                  <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {item.desc}
                   </p>
-                  <Link href={item.link}>
-                    <button>See demo</button>
+                  <Link href={item.link} className="flex justify-end">
+                    <button className="p-2 text-sm md:p-2 md:text-md lg:p-2 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">See demo</button>
                   </Link>
                 </div>
               </div>
@@ -90,7 +90,7 @@ const PortfolioPage = () => {
         <div className="relative">
           <motion.svg
             animate={{ rotate: 360 }}
-            transition={{ duration: 8, ease: "linear", repeat: Infinity }}
+            transition={{ duration: 10, ease: "linear", repeat: Infinity }}
             viewBox="0 0 300 300"
             className="w-64 h-64 md:w-[500px] md:h-[500px]"
           >
