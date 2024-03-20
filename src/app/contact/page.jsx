@@ -1,14 +1,40 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
 
 const ContactPage = () => {
 
-  const [success, setSuccess] = useState(true);
-  const [error, setError] = useState(true);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
 
   const text = "Say Hello";
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setError(false);
+    setSuccess(false);
+
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        form.current,
+        process.env.NEXT_PUBLIC_PUBLIC_KEY,
+      )
+      .then(
+        () => {
+          setSuccess(true);
+          form.current.reset();
+        },
+        (error) => {
+          setError(true);
+        }
+      );
+  };
 
   return (
     <motion.div
@@ -35,13 +61,27 @@ const ContactPage = () => {
           </div>
         </div>
         {/* CONTACT FORM CONTAINER */}
-        <form className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24">
+        <form
+          onSubmit={sendEmail}
+          ref={form}
+          className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
+        >
           <span>Cher Jay,</span>
-          <textarea rows={7} className="bg-transparent border-b-2 border-b-black outline-none resize-none"/>
+          <textarea
+            rows={7}
+            className="bg-transparent border-b border-b-gray-400 outline-none resize-none"
+            name="user_message"
+          />
           <span>Mon adresse email est :</span>
-          <input type="text" className="bg-transparent border-b-2 border-b-black outline-none" />
+          <input
+            name="user_email"
+            type="text"
+            className="bg-transparent border-b border-b-gray-400 outline-none"
+          />
           <span>Cordialement,</span>
-          <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">Envoyer</button>
+          <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
+            Envoyer
+          </button>
           { success && <span className="text-green-600 font-semibold text-center ">🆗 Votre message a bien été envoyé !</span> }
           { error && <span className="text-red-600 font-semibold text-center">🤔 Echec de l'envoi, un problème est survenu...</span> }
         </form>
