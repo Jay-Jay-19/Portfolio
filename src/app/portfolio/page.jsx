@@ -56,7 +56,7 @@ const PortfolioPage = () => {
     >
       <div className="h-[600vh] relative" ref={ref}>
         <div className="w-screen h-[calc(100vh-6rem)] flex justify-center items-center text-8xl text-center">
-          My Works
+          Mes projets
         </div>
         <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
           <motion.div style={{ x }} className="flex">
@@ -102,7 +102,7 @@ const PortfolioPage = () => {
             </defs>
             <text fill="#000">
               <textPath xlinkHref="#circlePath" className="text-xl">
-                Front-end Developer and UI Designer
+                Fullstack Web & App Developper Est. 2023
               </textPath>
             </text>
           </motion.svg>
@@ -110,7 +110,7 @@ const PortfolioPage = () => {
             href="/contact"
             className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center"
           >
-            Hire me
+            Hire me !
           </Link>
         </div>
       </div>

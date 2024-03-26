@@ -1,19 +1,10 @@
-import { Inter, Gothic_A1, Arsenal, Tenor_Sans } from "next/font/google";
+import { Barlow } from "next/font/google";
 import "./globals.css";
 import TransitionProvider from "@/components/transitionProvider";
 
-const inter = Inter({ subsets: ["latin"] });
-const gothicA1 = Gothic_A1({
+const barlow = Barlow({
   subsets: ["latin"],
-  weight: ['100', '200', '300', '400', '600', '800'],
-});
-const arsenal = Arsenal({
-  subsets: ["latin"],
-  weight: ['400', '700'],
-});
-const tenor = Tenor_Sans({
-  subsets: ["latin"],
-  weight: ['400'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 });
 
 export const metadata = {
@@ -24,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={gothicA1.className}>
+      <body className={barlow.className}>
         <TransitionProvider>{children}</TransitionProvider>
       </body>
     </html>
