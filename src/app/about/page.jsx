@@ -68,9 +68,9 @@ const AboutPage = () => {
           <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
             {/* SKILL TITLE */}
             <motion.h1
-              initial={{ x:"-300px" }}
-              animate={isSkillRefInView ? { x:0 } : {}}
-              transition={{ delay: 0.2}}
+              initial={{ opacity: 0.1, y: 0 }}
+              animate={{ opacity: 1, y: "10px" }}
+              transition={{ repeat: 4, duration: 1.5, ease: "easeInOut" }}
               className="font-bold text-2xl"
             >
               COMPÉTENCES TECHNIQUES
@@ -135,6 +135,12 @@ const AboutPage = () => {
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Expo
               </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Postman
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Insomnia
+              </div>
             </motion.div>
             {/* SKILL SCROLL SVG */}
             <motion.svg
@@ -167,9 +173,9 @@ const AboutPage = () => {
           >
             {/* EXPERIENCE TITLE */}
             <motion.h1
-              initial={{ x: "-300px" }}
-              animate={isExperienceRefInView ? { x: "0" } : {}}
-              transition={{ delay: 0.2 }}
+              initial={{ opacity: 0.1, y: 0 }}
+              animate={{ opacity: 1, y: "10px" }}
+              transition={{ repeat: 15, duration: 1.5, ease: "easeInOut" }}
               className="font-bold text-2xl"
             >
               EXPÉRIENCE
