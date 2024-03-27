@@ -73,7 +73,7 @@ const AboutPage = () => {
               transition={{ delay: 0.2}}
               className="font-bold text-2xl"
             >
-              SKILLS
+              COMPÉTENCES TECHNIQUES
             </motion.h1>
             {/* SKILL LIST */}
             <motion.div
@@ -172,7 +172,7 @@ const AboutPage = () => {
               transition={{ delay: 0.2 }}
               className="font-bold text-2xl"
             >
-              EXPERIENCE
+              EXPÉRIENCE
             </motion.h1>
             {/* EXPERIENCE LIST */}
             <motion.div

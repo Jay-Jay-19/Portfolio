@@ -77,7 +77,9 @@ const PortfolioPage = () => {
                     {item.desc}
                   </p>
                   <Link href={item.link} className="flex justify-end">
-                    <button className="p-2 text-sm md:p-2 md:text-md lg:p-2 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">See demo</button>
+                    <button className="p-2 text-sm md:p-2 md:text-md lg:p-2 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
+                      See demo
+                    </button>
                   </Link>
                 </div>
               </div>
@@ -102,13 +104,13 @@ const PortfolioPage = () => {
             </defs>
             <text fill="#000">
               <textPath xlinkHref="#circlePath" className="text-xl">
-                Fullstack Web & App Developper Est. 2023
+                Fullstack Web & App Developer Est. 2023
               </textPath>
             </text>
           </motion.svg>
           <Link
             href="/contact"
-            className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center"
+            className="text-sm w-20 h-20 md:w-36 md:h-36 md:text-xl absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center"
           >
             Hire me !
           </Link>
