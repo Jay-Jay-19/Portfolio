@@ -11,7 +11,7 @@ const items = [
     color: "from-red-300 to-blue-300",
     title: "Orange Estate",
     projectType: "Projet personnel.",
-    desc: "Orange Estate est un site d'agence immobilière fictif entièrement responsif. Les annonces sont affichées dynamiquement. Possibilté de créer un profil pour créer/gérer ses annonces. Fonctions de recherche, tri et d'authentification par email ou compte Google.",
+    desc: "Site web d'agence immobilière entièrement responsif. Annonces affichées dynamiquement. Création de profils pour créer/gérer ses annonces. Fonctions de recherche, tri et d'authentification par email ou compte Google.",
     tech: "JavaScript | React | Tailwind CSS | Redux | MongoDB | Express | Mongoose | NodeJS | Insomnia" ,
     img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
     link: "https://github.com/Jay-Jay-19/orange-estate",
@@ -71,20 +71,20 @@ const PortfolioPage = () => {
                   <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
                     <Image src={item.img} alt="" fill />
                   </div>
-                  <div className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px] flex flex-col gap-3">
+                  <div className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     <p>
                       {item.projectType}
                     </p>
                     <p className="text-justify">
                       {item.desc}
                     </p>
-                    <p className="text-sm text-purple-900">
+                    <p className="text-purple-900">
                       {item.tech}
                     </p>
-                  </div>
                   <Link href={item.link} className="flex items-center justify-center">
-                    <Image src="/github.png" alt="github logo" width={34} height={34} className="md:w-10 md:h-10" />
+                    <Image src="/github.png" alt="github logo" width={30} height={30} className="md:w-10 md:h-10" />
                   </Link>
+                  </div>
                 </div>
               </div>
             ))}
