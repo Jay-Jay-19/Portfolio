@@ -64,14 +64,14 @@ const PortfolioPage = () => {
                 className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
                 key={item.id}
               >
-                <div className="flex flex-col gap-8 text-white">
-                  <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl drop-shadow-md">
+                <div className="flex flex-col gap-8 md:gap-3 xl:gap-8 text-white">
+                  <h1 className="text-4xl xl:text-8xl font-bold drop-shadow-md">
                     {item.title}
                   </h1>
-                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
-                    <Image src={item.img} alt="" fill />
+                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[400px] lg:h-[275px] xl:w-[600px] xl:h-[420px]">
+                    <Image src={item.img} alt="" fill className="rounded-xl" />
                   </div>
-                  <div className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">
+                  <div className="w-80 md:w-96 lg:w-[400px] md:text-sm xl:text-lg xl:w-[600px]">
                     <p>
                       {item.projectType}
                     </p>
@@ -81,8 +81,8 @@ const PortfolioPage = () => {
                     <p className="text-purple-900">
                       {item.tech}
                     </p>
-                  <Link href={item.link} className="flex items-center justify-center">
-                    <Image src="/github.png" alt="github logo" width={30} height={30} className="md:w-10 md:h-10" />
+                  <Link href={item.link} className="flex items-center justify-center pt-4 md:pt-0 xl:pt-4">
+                    <Image src="/github.png" alt="github logo" width={30} height={30} className="md:w-9 md:h-9" />
                   </Link>
                   </div>
                 </div>
@@ -91,7 +91,7 @@ const PortfolioPage = () => {
           </motion.div>
         </div>
       </div>
-      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
+      <div className="w-screen h-screen flex flex-col gap-16 md:gap-6 xl:gap-16 md:pt-52 xl:p-0 items-center justify-center text-center">
         <h1 className="text-8xl">Do you have a project ?</h1>
         <div className="relative">
           <motion.svg
