@@ -25,7 +25,7 @@ const Homepage = () => {
         <h1 className="text-4xl md:text-6xl font-bold">Créons <span className="text-transparent font-permanentMarker bg-clip-text bg-gradient-to-br from-pink-700 to-purple-300">aujourd'hui</span> les expériences digitales de <span className="text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-blue-600">demain</span>.</h1>
         {/* DESCRIPTION */}
         <p className="md:text-lg xl:text-xl">
-          Bienvenue sur mon site web. J'espère qu'il laisse entrevoir mon désir d'audace et de créativité à travers les différents projets mis en avant dans mon portfolio. Ils traduisent ma passion pour le code, mon oeil pour l'esthétisme tout autant que mon implication et mon aspiration à l'excellence.
+          Bienvenue sur mon site web. Je souhaite qu'il laisse entrevoir mon désir d'audace et de créativité à travers les différents projets mis en avant dans mon portfolio. Ils traduisent ma passion pour le code, mon oeil pour l'esthétisme tout autant que mon implication et mon aspiration à l'excellence.
         </p>
         {/* BUTTONS */}
         <div className="w-full flex gap-6 justify-center sm:justify-start">
@@ -40,7 +40,7 @@ const Homepage = () => {
           <MotionLink
             href="/CV-Gilbert-Mougamadou.pdf"
             target={"_blank"}
-            whileHover={{ scale: 1.05, rotate: "-2.95deg", backgroundColor: "purple", color: "white" }}
+            whileHover={{ scale: 1.10, rotate: "-5.95deg", backgroundColor: "purple", color: "white" }}
             whileTap={{ scale: 0.95 }}
             className="p-2 rounded ring-1 ring-black"
           >

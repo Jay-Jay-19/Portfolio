@@ -85,12 +85,12 @@ const Navbar = () => {
             alt="jay logo"
             width={65}
             height={65}
-            className="mt-8"
+            className="mt-4"
           />
         </Link>
       </div>
       {/* SOCIALS */}
-      <div className="hidden md:flex gap-4 w-1/3 justify-end pr-8">
+      <div className="hidden md:flex gap-4 w-1/3 justify-end pr-6">
         <Link href="https://github.com/Jay-Jay-19">
           <Image src="/github.png" alt="github logo" width={30} height={30} />
         </Link>
