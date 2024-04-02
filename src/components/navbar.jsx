@@ -70,7 +70,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
+    <div className="h-full flex items-center justify-between px-4 md:px-12 lg:px-20 xl:px-48 text-xl">
       {/* LINKS */}
       <div className="hidden md:flex gap-4 w-1/3 whitespace-nowrap">
         {links.map((link) => (
@@ -80,16 +80,22 @@ const Navbar = () => {
       {/* LOGO */} 
       <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
         <Link href="/">
-          <Image src="/jay_logo.png" alt="jay logo" width={70} height={70} />
+          <Image
+            src="/jay_logo.png"
+            alt="jay logo"
+            width={65}
+            height={65}
+            className="mt-8"
+          />
         </Link>
       </div>
       {/* SOCIALS */}
-      <div className="hidden md:flex gap-4 w-1/3">
+      <div className="hidden md:flex gap-4 w-1/3 justify-end pr-8">
         <Link href="https://github.com/Jay-Jay-19">
-          <Image src="/github.png" alt="github logo" width={24} height={24} />
+          <Image src="/github.png" alt="github logo" width={30} height={30} />
         </Link>
         <Link href="https://www.linkedin.com/in/gilbert-jay-m-598a0b2b1/">
-          <Image src="/linkedin.png" alt="linkedin logo" width={24} height={24} />
+          <Image src="/linkedin.png" alt="linkedin logo" width={30} height={30} />
         </Link>
       </div>
       {/* RESPONSIVE MENU */} 
