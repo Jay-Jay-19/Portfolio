@@ -78,8 +78,8 @@ const ContactPage = () => {
             className="bg-transparent border-b border-b-gray-400 outline-none"
           />
           <span>Cordialement,</span>
-          <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
-            Envoyer
+          <button className="bg-purple-200 rounded font-semibold text-gray-600 p-3 text-lg">
+            Envoyer 🚀
           </button>
           { success && <span className="text-green-600 font-semibold text-center ">🆗 Votre message a bien été envoyé !</span> }
           { error && <span className="text-red-600 font-semibold text-center">🤔 Echec de l'envoi, un problème est survenu...</span> }
