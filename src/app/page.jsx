@@ -34,10 +34,11 @@ const Homepage = () => {
             Mes projets
           </Link>
           <Link
-            href="/contact"
+            href="/resume.pdf"
+            target={"_blank"}
             className="p-3 rounded ring-1 ring-black"
           >
-            Télécharger mon CV
+            Mon CV
           </Link>
         </div>
       </div>
