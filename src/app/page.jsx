@@ -4,6 +4,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
+const MotionLink = motion(Link);
+
 const Homepage = () => {
   return (
   <motion.div
@@ -26,20 +28,24 @@ const Homepage = () => {
           Bienvenue sur mon site web. J'espère qu'il laisse entrevoir mon désir d'audace et de créativité à travers les différents projets mis en avant dans mon portfolio. Ils traduisent ma passion pour le code, mon oeil pour l'esthétisme tout autant que mon implication et mon aspiration à l'excellence.
         </p>
         {/* BUTTONS */}
-        <div className="w-full flex gap-4 justify-center sm:justify-start">
-          <Link
+        <div className="w-full flex gap-6 justify-center sm:justify-start">
+          <MotionLink
             href="/portfolio"
-            className="p-3 rounded ring-1 ring-black bg-black text-white"
+            className="p-2 rounded ring-1 ring-black bg-black text-white"
+            whileHover={{ scale: 1.05, rotate: "2.95deg", backgroundColor: "purple" }}
+            whileTap={{ scale: 0.95 }}
           >
             Mes projets
-          </Link>
-          <Link
+          </MotionLink>
+          <MotionLink
             href="/CV-Gilbert-Mougamadou.pdf"
             target={"_blank"}
-            className="p-3 rounded ring-1 ring-black"
+            whileHover={{ scale: 1.05, rotate: "-2.95deg", backgroundColor: "purple", color: "white" }}
+            whileTap={{ scale: 0.95 }}
+            className="p-2 rounded ring-1 ring-black"
           >
             Mon CV
-          </Link>
+          </MotionLink>
         </div>
       </div>
     </div>
