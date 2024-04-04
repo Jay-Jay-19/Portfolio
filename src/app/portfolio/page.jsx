@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useRef } from "react";
 import OrangeEstate from "../../../public/orangeEstate-demo.mp4";
 
-const items = [
+/* const items = [
   {
     id: 1,
     color: "from-red-300 to-blue-300",
@@ -37,7 +37,7 @@ const items = [
     img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
     link: "https://github.com/adatechschool/projet-meubles-abelson-bastien-bruno-ghislaine-jay-thalia-zineb",
   },
-];
+]; */
 
 const PortfolioPage = () => {
 
@@ -60,38 +60,113 @@ const PortfolioPage = () => {
         <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
           <motion.div style={{ x }} className="flex">
             <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300" />
-            {items.map((item) => (
               <div
-                className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
-                key={item.id}
+                className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-red-300 to-blue-300"
               >
                 <div className="flex flex-col gap-8 md:gap-3 xl:gap-8 text-white">
                   <h1 className="text-4xl lg:text-5xl xl:text-7xl font-bold drop-shadow-md">
-                    {item.title}
+                    Orange Estate
                   </h1>
                   <div className="relative w-80 h-45 md:w-96 md:h-56 lg:w-[500px] lg:h-[280px] xl:w-[750px] xl:h-[400px]">
-                    <video controls>
+                    <video controls className="rounded-xl">
                       <source src={OrangeEstate} type="video/mp4" />
                     </video>
-                    
                   </div>
                   <div className="w-80 md:w-96 lg:w-[500px] md:text-sm xl:text-lg xl:w-[750px]">
-                    <p>
-                      {item.projectType}
+                    <p className="uppercase font-semibold">
+                      Projet personnel
                     </p>
                     <p className="text-justify">
-                      {item.desc}
+                      Site web d'agence immobilière entièrement responsif. Annonces affichées dynamiquement. Création de profils pour créer/gérer ses annonces. Fonctions de recherche, tri et d'authentification par email ou compte Google.
                     </p>
                     <p className="text-purple-900">
-                      {item.tech}
+                      JavaScript | React | Tailwind CSS | Redux | MongoDB | Express | Mongoose | NodeJS | Insomnia
                     </p>
-                  <Link href={item.link} className="flex items-center justify-center pt-4 md:pt-0 xl:pt-4">
-                    <Image src="/github.png" alt="github logo" width={30} height={30} className="md:w-9 md:h-9" />
+                  <Link
+                    href="https://github.com/Jay-Jay-19/orange-estate"
+                    className="flex items-center justify-center pt-4 md:pt-0 xl:pt-4"
+                  >
+                    <Image
+                      src="/github.png"
+                      alt="github logo"
+                      width={30}
+                      height={30}
+                      className="md:w-9 md:h-9"
+                    />
                   </Link>
-                  </div>
                 </div>
               </div>
-            ))}
+            </div>
+              <div
+                className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-blue-300 to-violet-300"
+              >
+                <div className="flex flex-col gap-8 md:gap-3 xl:gap-8 text-white">
+                  <h1 className="text-4xl lg:text-5xl xl:text-7xl font-bold drop-shadow-md">
+                    Gotcha !
+                  </h1>
+                  <div className="relative w-80 h-48 md:w-96 md:h-56 lg:w-[500px] lg:h-[280px] xl:w-[750px] xl:h-[400px]">
+                    <Image src="/comingSoon-screen.png" fill alt="" className="rounded-xl" />
+                  </div>
+                  <div className="w-80 md:w-96 lg:w-[500px] md:text-sm xl:text-lg xl:w-[750px]">
+                    <p className="uppercase font-semibold">
+                      Projet personnel
+                    </p>
+                    <p className="text-justify">
+                      Application mobile de livraison de repas à domicile. Affichage des restaurants et des plats en dynamique. Création d'un panier en dynamique. Intégration Google Maps.
+                    </p>
+                    <p className="text-purple-900">
+                      JavaScript | React Native | Tailwind CSS | Redux | Sanity | Expo | Android Studio
+                    </p>
+                  <Link
+                    href="https://github.com/Jay-Jay-19/gotcha"
+                    className="flex items-center justify-center pt-4 md:pt-0 xl:pt-4"
+                  >
+                    <Image
+                      src="/github.png"
+                      alt="github logo"
+                      width={30}
+                      height={30}
+                      className="md:w-9 md:h-9"
+                    />
+                  </Link>
+                </div>
+              </div>
+            </div>
+              <div
+                className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-violet-300 to-purple-300"
+              >
+                <div className="flex flex-col gap-8 md:gap-3 xl:gap-8 text-white">
+                  <h1 className="text-4xl lg:text-5xl xl:text-7xl font-bold drop-shadow-md">
+                    Vintage Gallery
+                  </h1>
+                  <div className="relative w-80 h-48 md:w-96 md:h-56 lg:w-[500px] lg:h-[280px] xl:w-[750px] xl:h-[400px]">
+                    <Image src="/vintageGallery.jpg" fill alt="" className="rounded-xl" />
+                  </div>
+                  <div className="w-80 md:w-96 lg:w-[500px] md:text-sm xl:text-lg xl:w-[750px]">
+                    <p className="uppercase font-semibold">
+                      Projet d'école
+                    </p>
+                    <p className="text-justify">
+                      Site e-commerce de meubles de seconde main. Affichage des articles et de leurs fiches en dynamique, création des routes avec middleware, authentification, hachage de mot de passe, gestion des tokens.
+                    </p>
+                    <p className="text-purple-900">
+                      JavaScript | React | Bootstrap | MongoDB | Mongoose | Express | NodeJS | Postman
+                    </p>
+                  <Link
+                    href="https://github.com/adatechschool/projet-meubles-abelson-bastien-bruno-ghislaine-jay-thalia-zineb"
+                    className="flex items-center justify-center pt-4 md:pt-0 xl:pt-4"
+                  >
+                    <Image
+                      src="/github.png"
+                      alt="github logo"
+                      width={30}
+                      height={30}
+                      className="md:w-9 md:h-9"
+                    />
+                  </Link>
+                </div>
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>
