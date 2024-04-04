@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
+import OrangeEstate from "../../../public/orangeEstate-demo.mp4";
 
 const items = [
   {
@@ -65,13 +66,16 @@ const PortfolioPage = () => {
                 key={item.id}
               >
                 <div className="flex flex-col gap-8 md:gap-3 xl:gap-8 text-white">
-                  <h1 className="text-4xl xl:text-8xl font-bold drop-shadow-md">
+                  <h1 className="text-4xl lg:text-5xl xl:text-7xl font-bold drop-shadow-md">
                     {item.title}
                   </h1>
-                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[400px] lg:h-[275px] xl:w-[600px] xl:h-[420px]">
-                    <Image src={item.img} alt="" fill className="rounded-xl" />
+                  <div className="relative w-80 h-45 md:w-96 md:h-56 lg:w-[500px] lg:h-[280px] xl:w-[750px] xl:h-[400px]">
+                    <video controls>
+                      <source src={OrangeEstate} type="video/mp4" />
+                    </video>
+                    
                   </div>
-                  <div className="w-80 md:w-96 lg:w-[400px] md:text-sm xl:text-lg xl:w-[600px]">
+                  <div className="w-80 md:w-96 lg:w-[500px] md:text-sm xl:text-lg xl:w-[750px]">
                     <p>
                       {item.projectType}
                     </p>
@@ -91,7 +95,7 @@ const PortfolioPage = () => {
           </motion.div>
         </div>
       </div>
-      <div className="w-screen h-screen flex flex-col gap-16 md:gap-6 xl:gap-16 md:pt-52 xl:p-0 items-center justify-center text-center">
+      <div className="w-screen h-screen flex flex-col gap-16 md:gap-6 xl:gap-16 md:pt-72 xl:p-0 items-center justify-center text-center">
         <h1 className="text-8xl">Do you have a project ?</h1>
         <div className="relative">
           <motion.svg
