@@ -6,39 +6,6 @@ import Link from "next/link";
 import { useRef } from "react";
 import OrangeEstate from "../../../public/orangeEstate-demo.mp4";
 
-/* const items = [
-  {
-    id: 1,
-    color: "from-red-300 to-blue-300",
-    title: "Orange Estate",
-    projectType: "Projet personnel.",
-    desc: "Site web d'agence immobilière entièrement responsif. Annonces affichées dynamiquement. Création de profils pour créer/gérer ses annonces. Fonctions de recherche, tri et d'authentification par email ou compte Google.",
-    tech: "JavaScript | React | Tailwind CSS | Redux | MongoDB | Express | Mongoose | NodeJS | Insomnia" ,
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "https://github.com/Jay-Jay-19/orange-estate",
-  },
-  {
-    id: 2,
-    color: "from-blue-300 to-violet-300",
-    projectType: "Projet personnel.",
-    title: "Gotcha !",
-    desc: "Application mobile de livraison de repas à domicile. Affichage des restaurants et des plats en dynamique. Création d'un panier en dynamique. Intégration Google Maps.",
-    tech: "JavaScript | React Native | Tailwind CSS | Redux | Sanity | Expo | Android Studio",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "https://github.com/Jay-Jay-19/gotcha",
-  },
-  {
-    id: 3,
-    color: "from-violet-300 to-purple-300",
-    projectType: "Projet d'école.",
-    title: "Vintage Gallery",
-    desc: "Site e-commerce de meubles de seconde main. Affichage des articles et de leurs fiches en dynamique, création des routes avec middleware, authentification, hachage de mot de passe, gestion des tokens.",
-    tech: "JavaScript | React | Bootstrap | MongoDB | Mongoose | Express | NodeJS | Postman",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "https://github.com/adatechschool/projet-meubles-abelson-bastien-bruno-ghislaine-jay-thalia-zineb",
-  },
-]; */
-
 const PortfolioPage = () => {
 
   const ref = useRef();
@@ -84,6 +51,7 @@ const PortfolioPage = () => {
                     </p>
                   <Link
                     href="https://github.com/Jay-Jay-19/orange-estate"
+                    target={"_blank"}
                     className="flex items-center justify-center pt-4 md:pt-0 xl:pt-4"
                   >
                     <Image
@@ -119,6 +87,7 @@ const PortfolioPage = () => {
                     </p>
                   <Link
                     href="https://github.com/Jay-Jay-19/gotcha"
+                    target={"_blank"}
                     className="flex items-center justify-center pt-4 md:pt-0 xl:pt-4"
                   >
                     <Image
@@ -154,6 +123,7 @@ const PortfolioPage = () => {
                     </p>
                   <Link
                     href="https://github.com/adatechschool/projet-meubles-abelson-bastien-bruno-ghislaine-jay-thalia-zineb"
+                    target={"_blank"}
                     className="flex items-center justify-center pt-4 md:pt-0 xl:pt-4"
                   >
                     <Image
