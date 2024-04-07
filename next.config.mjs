@@ -7,6 +7,7 @@ const nextConfig = {
         hostname: "images.pexels.com",
       },
     ],
+    unoptimized: true,
   },
   webpack: (config, { isServer }) => {
     config.module.rules.push({
