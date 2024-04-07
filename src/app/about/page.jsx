@@ -33,11 +33,11 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">ME IN A NUTSHELL</h1>
             {/* BIOGRAPHY DESCRIPTION */}
             <p className="text-lg">
-              Curieux. <br /> Empathique. Sens du détail. <br />Dévoué. Problem-solver. Communicatif. <br /> Rigoureux. Esprit d'équipe. <br /> Humour.
+              Curieux. <br /> Empathique. Sens du détail. <br />Dévoué. Problem-solver. Communicatif. <br /> Rigoureux. Esprit {`d'équipe`}. <br /> Humour.
             </p>
             {/* BIOGRAPHY QUOTE */}
             <p>
-              Le code en soi peut tout à fait être passionnant et brillant. Mais sa capacité à être l'outil d'une fin plus grande reste le plus fascinant. La technologie utilisée n'impressionnera personne. C'est l'expérience et l'émotion qu'elle crée qui restera.
+              Le code en soi peut tout à fait être passionnant et brillant. Mais sa capacité à être {`l'outil`} {`d'une`} fin plus grande reste le plus fascinant. La technologie utilisée {`n'impressionnera`} personne. {`C'est`} {`l'expérience`} et {`l'émotion`} {`qu'elle`} crée qui restera.
             </p>
             
             {/* BIOGRAPHY SCROLL SVG */}

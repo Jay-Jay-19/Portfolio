@@ -44,7 +44,7 @@ const PortfolioPage = () => {
                       Projet personnel
                     </p>
                     <p className="text-justify">
-                      Site web d'agence immobilière entièrement responsif. Annonces affichées dynamiquement. Création de profils pour créer/gérer ses annonces. Fonctions de recherche, tri et d'authentification par email ou compte Google.
+                      Site web {`d'agence`} immobilière entièrement responsif. Annonces affichées dynamiquement. Création de profils pour créer/gérer ses annonces. Fonctions de recherche, tri et {`d'authentification`} par email ou compte Google.
                     </p>
                     <p className="text-purple-900">
                       JavaScript | React | Tailwind CSS | Redux | MongoDB | Express | Mongoose | NodeJS | Insomnia
@@ -80,7 +80,7 @@ const PortfolioPage = () => {
                       Projet personnel
                     </p>
                     <p className="text-justify">
-                      Application mobile de livraison de repas à domicile. Affichage des restaurants et des plats en dynamique. Création d'un panier en dynamique. Intégration Google Maps.
+                      Application mobile de livraison de repas à domicile. Affichage des restaurants et des plats en dynamique. Création {`d'un`} panier en dynamique. Intégration Google Maps.
                     </p>
                     <p className="text-purple-900">
                       JavaScript | React Native | Tailwind CSS | Redux | Sanity | Expo | Android Studio
@@ -113,7 +113,7 @@ const PortfolioPage = () => {
                   </div>
                   <div className="w-80 md:w-96 lg:w-[500px] md:text-sm xl:text-lg xl:w-[750px]">
                     <p className="uppercase font-semibold">
-                      Projet d'école
+                      Projet {`d'école`}
                     </p>
                     <p className="text-justify">
                       Site e-commerce de meubles de seconde main. Affichage des articles et de leurs fiches en dynamique, création des routes avec middleware, authentification, hachage de mot de passe, gestion des tokens.
