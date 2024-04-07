@@ -9,7 +9,7 @@ const barlow = Barlow({
 
 export const metadata = {
   title: "The portfolio of Jay",
-  description: "Hire me !",
+  description: "Powered by Next.js",
 };
 
 export default function RootLayout({ children }) {

@@ -7,7 +7,7 @@ const NavLink = ({ link }) => {
   const pathName = usePathname();
 
   return (
-    <Link className={`rounded p-1 ${pathName === link.url && "underline underline-offset-8 decoration-1"}`} href={link.url}>
+    <Link className={`${pathName === link.url && "underline underline-offset-8 decoration-1"}`} href={link.url}>
       {link.title}
     </Link>
   );

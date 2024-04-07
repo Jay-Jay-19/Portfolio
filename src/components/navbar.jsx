@@ -81,7 +81,7 @@ const Navbar = () => {
       <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
         <Link href="/">
           <Image
-            src="/jay_logo.png"
+            src="/jaylogo.png"
             alt="jay logo"
             width={65}
             height={65}
