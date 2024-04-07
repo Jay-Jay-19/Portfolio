@@ -91,11 +91,27 @@ const Navbar = () => {
       </div>
       {/* SOCIALS */}
       <div className="hidden md:flex gap-4 w-1/3 justify-end pr-6">
-        <Link href="https://github.com/Jay-Jay-19">
-          <Image src="/github.png" alt="github logo" width={30} height={30} />
+        <Link
+          href="https://github.com/Jay-Jay-19"
+          target={"_blank"}
+        >
+          <Image
+            src="/github.png"
+            alt="github logo"
+            width={30}
+            height={30}
+          />
         </Link>
-        <Link href="https://www.linkedin.com/in/gilbert-jay-m-598a0b2b1/">
-          <Image src="/linkedin.png" alt="linkedin logo" width={30} height={30} />
+        <Link
+          href="https://www.linkedin.com/in/gilbert-jay-m-598a0b2b1/"
+          target={"_blank"}
+        >
+          <Image
+            src="/linkedin.png"
+            alt="linkedin logo"
+            width={30}
+            height={30}
+          />
         </Link>
       </div>
       {/* RESPONSIVE MENU */} 
