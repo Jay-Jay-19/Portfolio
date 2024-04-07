@@ -23,14 +23,14 @@ const ContactPage = () => {
         process.env.NEXT_PUBLIC_SERVICE_ID,
         process.env.NEXT_PUBLIC_TEMPLATE_ID,
         form.current,
-        process.env.NEXT_PUBLIC_PUBLIC_KEY,
+        process.env.NEXT_PUBLIC_PUBLIC_KEY
       )
       .then(
         () => {
           setSuccess(true);
           form.current.reset();
         },
-        (error) => {
+        () => {
           setError(true);
         }
       );
@@ -82,7 +82,7 @@ const ContactPage = () => {
             Envoyer 🚀
           </button>
           { success && <span className="text-green-600 font-semibold text-center ">🆗 Votre message a bien été envoyé !</span> }
-          { error && <span className="text-red-600 font-semibold text-center">🤔 Echec de l'envoi, un problème est survenu...</span> }
+          { error && <span className="text-red-600 font-semibold text-center">🤔 Echec de {`l'envoi`}, un problème est survenu...</span> }
         </form>
       </div>
     </motion.div>
