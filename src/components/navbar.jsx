@@ -83,9 +83,9 @@ const Navbar = () => {
           <Image
             src="/jaylogo.png"
             alt="jay logo"
-            width={65}
-            height={65}
-            className="mt-4"
+            width={40}
+            height={40}
+            className="mt-4 sm:w-16 sm:h-16"
           />
         </Link>
       </div>
@@ -118,23 +118,23 @@ const Navbar = () => {
       <div className="md:hidden">
         {/* MENU BUTTON */}
         <button
-          className="w-10 h-8 flex flex-col justify-between z-50 relative"
+          className="w-10 h-6 flex flex-col justify-between z-50 relative"
           onClick={(() => setOpen(!open))}
         >
           <motion.div
             variants={topVariants}
             animate={open ? "opened" : "closed"}
-            className="w-10 h-1 bg-black rounded origin-left"
+            className="w-8 h-0.5 bg-black rounded origin-left"
           ></motion.div>
           <motion.div
             variants={centerVariants}
             animate={open ? "opened" : "closed"}
-            className="w-10 h-1 bg-black rounded"
+            className="w-8 h-0.5 bg-black rounded"
           ></motion.div>
           <motion.div
             variants={bottomVariants}
             animate={open ? "opened" : "closed"}
-            className="w-10 h-1 bg-black rounded origin-left"
+            className="w-8 h-0.5 bg-black rounded origin-left"
           ></motion.div>
         </button>
         {/* MENU LIST */}
