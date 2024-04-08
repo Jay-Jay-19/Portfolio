@@ -28,7 +28,7 @@ const AboutPage = () => {
         {/* TEXT CONTAINER */}
         <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-3 xl:w-1/2">
           {/* BIOGRAPHY CONTAINER */}
-          <div className="flex flex-col gap-8 sm:gap-4 xl:gap-10 justify-center">
+          <div className="flex flex-col gap-6 sm:gap-4 xl:gap-10 justify-center">
             {/* BIOGRAPHY TITLE */}
             <h1 className="font-bold text-2xl">ME IN A NUTSHELL</h1>
             {/* BIOGRAPHY DESCRIPTION */}
