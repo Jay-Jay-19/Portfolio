@@ -34,9 +34,11 @@ const PortfolioPage = () => {
                   <h1 className="text-4xl lg:text-5xl xl:text-7xl font-bold drop-shadow-md">
                     Orange Estate
                   </h1>
-                  <div className="relative w-80 h-45 md:w-96 md:h-56 lg:w-[500px] lg:h-[280px] xl:w-[750px] xl:h-[400px]">
+                  <div className="relative w-80 h-45 md:w-96 md:h-56 lg:w-[500px] lg:h-[280px] xl:w-[750px] xl:h-[400px] rounded-xl">
                     <video
                       controls
+                      playsInline
+                      preload="yes"
                       className="rounded-xl"
                     >
                       <source
