@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 import OrangeEstate from "../../../public/orangeEstate-demo.mp4";
+import Poster from "../../../public/poster.png";
 
 const PortfolioPage = () => {
 
@@ -34,11 +35,20 @@ const PortfolioPage = () => {
                   <h1 className="text-4xl lg:text-5xl xl:text-7xl font-bold drop-shadow-md">
                     Orange Estate
                   </h1>
-                  {/* <div className="relative w-80 h-45 md:w-96 md:h-56 lg:w-[500px] lg:h-[280px] xl:w-[750px] xl:h-[400px] rounded-xl"> */}
-                    <iframe src={OrangeEstate} className="w-80 h-45 md:w-96 md:h-56 lg:w-[500px] lg:h-[280px] xl:w-[750px] xl:h-[400px] rounded-xl">
-
-                    </iframe>
-                  {/* </div> */}
+                  <div className="relative w-80 h-45 md:w-96 md:h-56 lg:w-[500px] lg:h-[280px] xl:w-[750px] xl:h-[400px] rounded-xl">
+                    <video
+                      controls
+                      preload="yes"
+                      playsInline
+                      poster="/poster.png"
+                      className="rounded-xl"
+                    >
+                      <source
+                        src={OrangeEstate}
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
                   <div className="w-80 md:w-96 lg:w-[500px] md:text-sm xl:text-lg xl:w-[750px]">
                     <p className="uppercase font-semibold">
                       Projet personnel
