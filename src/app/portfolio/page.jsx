@@ -38,6 +38,7 @@ const PortfolioPage = () => {
                     <video
                       controls
                       playsInline
+                      muted
                       preload="yes"
                       className="rounded-xl"
                     >
