@@ -21,7 +21,7 @@ const PortfolioPage = () => {
       transition={{ duration: 1 }}
     >
       <div className="h-[600vh] relative" ref={ref}>
-        <div className="w-screen h-[calc(100vh-6rem)] flex justify-center items-center text-6xl text-center">
+        <div className="w-screen h-[calc(100vh-6rem)] flex justify-center items-center text-6xl xl:text-8xl text-center">
           Mes projets
         </div>
         <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
@@ -34,20 +34,11 @@ const PortfolioPage = () => {
                   <h1 className="text-4xl lg:text-5xl xl:text-7xl font-bold drop-shadow-md">
                     Orange Estate
                   </h1>
-                  <div className="relative w-80 h-45 md:w-96 md:h-56 lg:w-[500px] lg:h-[280px] xl:w-[750px] xl:h-[400px] rounded-xl">
-                    <video
-                      controls
-                      playsInline
-                      muted
-                      preload="yes"
-                      className="rounded-xl"
-                    >
-                      <source
-                        src={OrangeEstate}
-                        type="video/mp4"
-                      />
-                    </video>
-                  </div>
+                  {/* <div className="relative w-80 h-45 md:w-96 md:h-56 lg:w-[500px] lg:h-[280px] xl:w-[750px] xl:h-[400px] rounded-xl"> */}
+                    <iframe src={OrangeEstate} className="w-80 h-45 md:w-96 md:h-56 lg:w-[500px] lg:h-[280px] xl:w-[750px] xl:h-[400px] rounded-xl">
+
+                    </iframe>
+                  {/* </div> */}
                   <div className="w-80 md:w-96 lg:w-[500px] md:text-sm xl:text-lg xl:w-[750px]">
                     <p className="uppercase font-semibold">
                       Projet personnel
